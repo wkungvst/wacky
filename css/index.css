@@ -1,0 +1,38 @@
+
+#logo{
+	margin-top:10px;
+	width:420px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#menu{
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.menu_item{
+	cursor:pointer;
+	font-size:11px;
+	margin-left:auto;
+	margin-right:auto;
+	margin:10px;
+	display:inline-block;
+	text-align:center;
+}
+
+.menu_item:hover{
+	text-decoration: underline;
+	transition-delay:0.4s;
+}
+#main_container{
+	width:100%;
+}
+
+html, body{
+	padding:0;margin:0;
+	background:white;
+}

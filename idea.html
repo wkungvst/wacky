@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/md5.min.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/idea.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Luckiest+Guy|Stylish&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<div id="logo_text">barstoolDreamer</div>
+		<div id="tag_text">Helping create original, jam band-inspired merch </div>
+	</header>
+	<section id="main_parent">
+		<div id="main_container">
+			<div id="tag">Original, jam band-inspired merch</div>
+			which describes you?
+
+			<div id="user_container">
+				<div id="user_left">
+					<div id="user_1" class="user_option"> i have an idea for a shirt, sticker, or patch. </div>
+					<div id="user_2" class="user_option"> i need help improving or editing a design.</div>
+					<div id="user_3" class="user_option"> my final design is ready for production.</div>
+					<div id="user_4" class="user_option"> i need something custom <span class="user_subtext">(hat, tapestry, mug, etc.)</span> </div>
+
+					<div id="go_to_artist">
+						<div>Artists</div>
+						<div>List your items for free ($0 fees) </div>
+						<div>Let us help implement your designs!</div>
+
+						<a href="artist.html">Learn More</a> 
+					</div>			
+				</div>
+				<div id="user_right">
+	
+					<div id="user_1_info" class="user_info"> 
+						<div>Let our community of artists and designers turn your idea into reality. </div>
+						<div>
+							<form autocomplete="off">
+								<input id="idea_title_input" name="idea_title" placeholder="Title (e.g. Boston Bruin terrapin sticker) "></input>
+								<textarea id="idea_text_input" placeholder="Description (e.g. Need help replacing the Grateful Dead terrapin with a Boston Bruin bear. Instead of a banjo, the bear should be holding a hockey stick. Colors are brown, yellow, white, and black)."></textarea>
+							</form>
+						</div>
+						<div>
+							<div>upload sketches or images for reference (optional)</div>
+							<div class="upload">Upload</div>
+						</div>
+
+						<div>tags: 
+						<input id="tags"></input>
+						</div>
+					</div>
+
+					<div id="user_2_info" class="user_info"> 
+						<div>Let's turn your image or sketch into a design ready for production.</div>
+						<div>upload images for reference</div>
+							<div>
+								What does it need?
+								<form autocomplete="off">
+									<textarea id="idea_2_text_input" class="idea_text_input" placeholder="description"></textarea>
+								</form>
+							</div>
+							<div>
+								<div>upload sketches or images for reference (optional)</div>
+								<div class="upload">Upload</div>
+							</div>
+							<div class="input_label">Add a tag</div>
+							<div>
+							<input id="tags"></input>
+							</div>
+					</div>
+
+					<div id="user_3_info" class="user_info"> 
+						<div class="user_text_large">We turn your design into a finished product, shipped to your door.</div>
+						<div class="user_text_small">choose an option below</div>
+							<div id="merch_type_container">
+								<div id="merch_1" class="merch_type">
+									STICKER
+								</div>
+
+								<div id="merch_2" class="merch_type">
+									SHIRT
+								</div>
+
+								<div id="merch_3" class="merch_type">
+									PATCH
+								</div>
+
+								<div id="merch_4" class="merch_type">
+									SOMETHING CUSOTM
+								</div>
+							</div> <!-- merch_type_container-->
+
+							<div id="merch_desc_container">
+								<div id="merch_desc_1" class="merch_desc">
+									<div>number of stickers? 10, 100, 100-1000, 1000+</div>
+									<div>number of colors? 1 , 2, 3, 4, 5+</div>
+									<div>size?</div>
+									<div>vinyl, die-cut. </div>
+									<div style="clear:both;">upload design (.png, .pdf, .jpg)</div>
+									<div class="upload">Upload</div>
+									<div class="input_label">Add a tag</div>
+									<div id="submit_merch_button">Get a Quote</div>
+								</div>
+
+								<div id="merch_desc_2" class="merch_desc">
+									<div>number of shirts? 1, 10, 50, 100+ </div>
+									<div>one side ? two sides</div>
+									<div>number of colors? 1 , 2, 3, 4, 5+</div>
+									<div>shirt sizes?</div>
+
+									<div style="clear:both;">upload design (.png, .pdf, .jpg)</div>
+									<div class="upload">Upload</div>
+									<div class="input_label">Add a tag</div>
+								
+									<div id="submit_merch_button">Get a Quote</div>
+								</div>
+
+								<div id="merch_desc_3" class="merch_desc">
+									<div>how many? 1, 10, 50, 100+ </div>
+									<div>colors? 1 , 2, 3, 4, 5+</div>
+									<div>approximate size</div>
+									<div style="clear:both;">upload design (.png, .pdf, .jpg)</div>
+									<div class="upload">Upload</div>
+									<div id="submit_merch_button">Get a Quote</div>
+								</div>
+
+								<div id="merch_desc_4" class="merch_desc">
+									desc 4
+
+								</div>
+							</div>
+					</div>
+
+					<div id="user_4_info" class="user_info"> 
+
+					</div>
+				</div>
+				
+			</div>
+			
+			<div id="artist_container">
+				<div id="artist_1" class="artist_option_container">Sell your merch on barstoolDreamer <span class="user_subtext">($0 fees)</span>. </div>
+				<div id="artist_1" class="artist_option_container">Let us help turn your design into a completed product</div>
+			</div><!-- artist choose container -->
+
+		</div><!--main_container-->
+	</section><!-- main_parent -->
+	
+	<footer id="footer">
+		footer
+	</footer>
+</body>
+
+</html>
